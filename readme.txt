@@ -121,7 +121,37 @@ ego-product-provider:
         # 请求处理的超时时间
         ReadTimeout=3000
 
+6. 引入hystrix dashboard
+a) 引入依赖
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+</dependency>
+
+<!-- actuator -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+b) 启动类添加 @EnableHystrixDashboard 注解
+c) 配置 com.vic.consumer.config.ServletConfig
+d) 依次启动eureka,producer,consumer
+在浏览器输入 http://localhost:9006/hystrix
+在地址输入框中输入 http://localhost:9006/quorum/hystrix.stream，点击 Monitor Stream
+e) 访问feign接口，即可在图形化界面看到变化
+f) 当hystrix监控界面出现 Unable to connect to Command Metric Stream
+需要在调用端配置如下：
+hystrix:
+  # 把监控地址加入proxyStreamAllowList
+  dashboard:
+    proxy-stream-allow-list: "localhost"
+
+
 Reference
-//优化feign组件
+// 优化feign组件
 https://www.jianshu.com/p/59295c91dde7
 https://www.jianshu.com/p/7a2c1c5d953d
+
+// Hoxton.SR9版本使用hystrix dashboard
+https://blog.csdn.net/haiertadiedie/article/details/110438819

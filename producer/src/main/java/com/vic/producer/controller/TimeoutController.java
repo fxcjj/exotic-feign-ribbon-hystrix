@@ -16,7 +16,7 @@ public class TimeoutController {
     public String bracket() {
         System.out.println("=========================================executing bracket method====================================");
         try {
-            Thread.sleep(4000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

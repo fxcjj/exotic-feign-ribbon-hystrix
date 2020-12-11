@@ -93,8 +93,10 @@ hystrix:
         isolation:
           thread:
             # 断路器超时时间，默认1000ms
-            timeoutInMilliseconds: 6000
-
+            timeoutInMilliseconds: 10000
+  # 把监控地址加入proxyStreamAllowList
+  dashboard:
+    proxy-stream-allow-list: "localhost"
 
 #logging:
 #  level:
