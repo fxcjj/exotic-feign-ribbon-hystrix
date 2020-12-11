@@ -155,3 +155,5 @@ https://www.jianshu.com/p/7a2c1c5d953d
 
 // Hoxton.SR9版本使用hystrix dashboard
 https://blog.csdn.net/haiertadiedie/article/details/110438819
+// hystrix dashboard
+https://www.haoyizebo.com/posts/56139c3d/

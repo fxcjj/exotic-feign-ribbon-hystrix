@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51a3eaa5-e2b1-416f-8510-6af3da9522dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/producer/src/main/java/com/vic/producer/controller/TimeoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/producer/src/main/java/com/vic/producer/controller/TimeoutController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +178,7 @@
       <workItem from="1607163445606" duration="41260000" />
       <workItem from="1607504805101" duration="6405000" />
       <workItem from="1607562479608" duration="1028000" />
-      <workItem from="1607658268460" duration="13511000" />
+      <workItem from="1607658268460" duration="13604000" />
     </task>
     <task id="LOCAL-00001" summary="add conclusion">
       <created>1607666235608</created>
@@ -193,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607666235609</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="use hystrix dashboard demo">
+      <created>1607686776741</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607686776741</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +202,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add conclusion" />
-    <option name="LAST_COMMIT_MESSAGE" value="add conclusion" />
+    <MESSAGE value="use hystrix dashboard demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="use hystrix dashboard demo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1607495072207">
@@ -224,10 +226,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607505024481" />
-    <state x="539" y="113" key="CommitChangelistDialog2" timestamp="1607686744644">
+    <state x="539" y="113" key="CommitChangelistDialog2" timestamp="1607686775979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607686744644" />
+    <state x="539" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607686775979" />
     <state width="510" height="466" key="DebuggerActiveHint" timestamp="1606816928122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,10 +294,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1607501141261" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607666237121">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607686778102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607666237121" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607686778102" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607505850656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
