@@ -35,7 +35,7 @@ feign:
         # feign接口默认连接超时配置
         connectTimeout: 10000
         # feign接口默认读取超时配置
-        readTimeout: 8000
+        readTimeout: 60000
         loggerLevel: full
       # 指定服务的feign配置
       producer1:
@@ -70,7 +70,7 @@ ribbon:
   # ribbon请求连接实例的超时时间，默认值2000
   ConnectTimeout: 5000
   # 负载均衡超时处理时间，默认值5000
-  ReadTimeout: 4000
+  ReadTimeout: 3000
   # 同一台实例最大重试次数,不包括首次调用，默认0
   MaxAutoRetries: 0
   # 重试负载均衡其他的实例最大重试次数,不包括首次调用

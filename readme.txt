@@ -1,20 +1,85 @@
 
-1. 测试feign.hystrix.enabled
-在consumer模块中application.yml配置如下：
-# feign相关配置
+1. 测试feign默认超时时间
+如果未配置feign.client.config.default相关，则connectTimeout默认10s，readTimeout默认60s
+a) 关闭hystrix断路器开关，即feign.hystrix.enabled为false
+b) 服务提供者代码
+@GetMapping("bracket")
+public String bracket() {
+    try {
+        // 当前线程等待61秒
+        Thread.sleep(61000);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    return "bracket";
+ }
+c) 服务调用端会显示错误信息
+Whitelabel Error Page
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+Tue Dec 08 14:56:26 CST 2020
+There was an unexpected error (type=Internal Server Error, status=500).
+d) 修改全局feign参数
+调用端配置如下：
+feign:
+  client:
+    config:
+      # feign默认配置，可指定服务名声明相关feign配置
+      default:
+        # feign接口默认连接超时配置
+        connectTimeout: 10000
+        # feign接口默认读取超时配置
+        readTimeout: 8000
+        loggerLevel: full
+
+2. 测试feign超时触发重试机制
+当发生超时时feign默认不会重试（参考feign.Retryer）。
+如果需要重试，需要配置（参考com.vic.consumer.config.FeignRetryerConfig）
+
+3. 测试对指定服务设置feign相关参数
+a) 关闭hystrix断路器开关，即feign.hystrix.enabled为false
+b) 调用端配置如下
+feign:
+  client:
+    config:
+      # 指定服务的feign配置
+      producer1:
+        # 连接超时时间
+        connectTimeout: 5000
+        # 数据处理超时时间
+        readTimeout: 5000
+        loggerLevel: full
+c) 服务提供者如下
+@GetMapping("maturity")
+public String maturity() {
+    try {
+        Thread.sleep(6000);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    return "maturity";
+ }
+d) 如果未找到某一参数配置，则取全局配置
+
+4. 测试feign.hystrix.enabled
+a) 调用端正确配置feign超时时间
 feign:
   client:
     config:
       # feign默认配置
       default:
         # feign接口默认连接超时配置
-        connectTimeout: 5000
+        connectTimeout: 10000
         # feign接口默认读取超时配置
-        readTimeout: 7000
+        readTimeout: 60000
+b) 打开hystrix断路器开关
+在调用端配置如下
+feign:
   hystrix:
     # hystrix断路器开关
     # If true, an OpenFeign client will be wrapped with a Hystrix circuit breaker
-    enabled: false
+    enabled: true
+c) hystrix相关配置
+在调用端配置如下
 # hystrix相关配置
 hystrix:
   command:
@@ -26,43 +91,21 @@ hystrix:
           thread:
             # hystrix的超时时间
             timeoutInMilliseconds: 8000
-
-调用者
-com.vic.consumer.controller.TimeoutController.bracket
-
-提供者
-
-
-
-# feign相关配置
-feign:
-  hystrix:
-    # If true, an OpenFeign client will be wrapped with a Hystrix circuit breaker
-    enabled: false
-
-当关闭hystrix时，不会返回执行fallback。
-
- * 如果产生超时
- * @return
- */
+d) 服务提供端代码
 @GetMapping("bracket")
 public String bracket() {
-    long startTime = System.currentTimeMillis();
-    String bracket = producerClient.bracket();
-    System.out.println("elapsed time: " + (System.currentTimeMillis() - startTime));
-    return bracket;
+    try {
+        // 当前线程等待
+        Thread.sleep(9000);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+    return "bracket";
 }
+e) 当发生超时会走feign接口的fallback
 
 
-
-
-
-Whitelabel Error Page
-This application has no explicit mapping for /error, so you are seeing this as a fallback.
-
-Tue Dec 08 14:56:26 CST 2020
-There was an unexpected error (type=Internal Server Error, status=500).
-
+5. 有待测试ribbon
 
 #局部配置案例
 ego-product-provider:
@@ -77,3 +120,8 @@ ego-product-provider:
         ConnectTimeout=3000
         # 请求处理的超时时间
         ReadTimeout=3000
+
+Reference
+//优化feign组件
+https://www.jianshu.com/p/59295c91dde7
+https://www.jianshu.com/p/7a2c1c5d953d
