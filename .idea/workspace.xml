@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="51a3eaa5-e2b1-416f-8510-6af3da9522dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/eureka/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2793354" />
@@ -178,7 +177,7 @@
       <workItem from="1607163445606" duration="41260000" />
       <workItem from="1607504805101" duration="6405000" />
       <workItem from="1607562479608" duration="1028000" />
-      <workItem from="1607658268460" duration="13604000" />
+      <workItem from="1607658268460" duration="15622000" />
     </task>
     <task id="LOCAL-00001" summary="add conclusion">
       <created>1607666235608</created>
@@ -194,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607686776741</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="use hystrix dashboard demo">
+      <created>1607686830778</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607686830778</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,18 +232,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607505024481" />
-    <state x="539" y="113" key="CommitChangelistDialog2" timestamp="1607686775979">
+    <state x="539" y="113" key="CommitChangelistDialog2" timestamp="1607912245330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607686775979" />
+    <state x="539" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607912245330" />
     <state width="510" height="466" key="DebuggerActiveHint" timestamp="1606816928122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="510" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1606816928122" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1607509921923">
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1607912231283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607509921923" />
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607912231283" />
     <state width="1877" height="549" key="GridCell.Tab.0.bottom" timestamp="1607686383264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -294,10 +300,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1607501141261" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607686778102">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607686831608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607686778102" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607686831608" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607505850656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
