@@ -73,14 +73,14 @@ ribbon:
   ReadTimeout: 3000
   # 同一台实例最大重试次数,不包括首次调用，默认0
   MaxAutoRetries: 0
-  # 重试负载均衡其他的实例最大重试次数,不包括首次调用
-#  MaxAutoRetriesNextServer: 1
+  # 重试负载均衡其他的实例最大重试次数,不包括首次调用，默认1
+  MaxAutoRetriesNextServer: 0
   # 是否所有操作都重试
-#  OkToRetryOnAllOperations: false
+  OkToRetryOnAllOperations: false
 
 # ribbon的局部配置
 
-
+# hystrix.timeoutInMilliseconds   >=  ribbonTimeout = (ribbonReadTimeout + ribbonConnectTimeout) * (maxAutoRetries + 1) * (maxAutoRetriesNextServer + 1)
 # hystrix的超时时间，开关在feign.hystrix.enabled
 hystrix:
   command:
