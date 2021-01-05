@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "producer", fallback = ProducerClientHystrix.class)
 public interface ProducerClient {
 
+    @GetMapping("ribbon/test1")
+    String ribbonTest1();
+
+
     @GetMapping("test/hello")
     String hello(@RequestParam(value = "name") String name);
 
@@ -44,6 +48,11 @@ public interface ProducerClient {
  */
 @Component
 class ProducerClientHystrix implements ProducerClient {
+
+    @Override
+    public String ribbonTest1() {
+        return "ribbonTest1, 服务降级";
+    }
 
     @Override
     public String hello(String name) {

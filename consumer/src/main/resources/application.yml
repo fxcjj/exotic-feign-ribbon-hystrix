@@ -74,11 +74,12 @@ ribbon:
   # 同一台实例最大重试次数,不包括首次调用，默认0
   MaxAutoRetries: 0
   # 重试负载均衡其他的实例最大重试次数,不包括首次调用，默认1
-  MaxAutoRetriesNextServer: 0
-  # 是否所有操作都重试
-  OkToRetryOnAllOperations: false
+  MaxAutoRetriesNextServer: 1
+  # 是否对所有操作都重试
+  OkToRetryOnAllOperations: true
 
 # ribbon的局部配置
+
 
 # hystrix.timeoutInMilliseconds   >=  ribbonTimeout = (ribbonReadTimeout + ribbonConnectTimeout) * (maxAutoRetries + 1) * (maxAutoRetriesNextServer + 1)
 # hystrix的超时时间，开关在feign.hystrix.enabled
@@ -93,7 +94,7 @@ hystrix:
         isolation:
           thread:
             # 断路器超时时间，默认1000ms
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 16000
   # 把监控地址加入proxyStreamAllowList
   dashboard:
     proxy-stream-allow-list: "localhost"

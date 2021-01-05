@@ -105,8 +105,30 @@ public String bracket() {
 e) 当发生超时会走feign接口的fallback
 
 
-5. 有待测试ribbon
+5. 测试ribbon
+5.1 ribbon全局配置
+a) 在consumer模块添加配置
+# feign的负载均衡ribbon配置，spring cloud feign 默认开启支持ribbon，开关在spring.cloud.loadbalancer.ribbon.enabled配置
+# ribbon的全局配置
+ribbon:
+  # ribbon请求连接实例的超时时间，默认值2000
+  ConnectTimeout: 5000
+  # 负载均衡超时处理时间，默认值5000
+  ReadTimeout: 3000
+  # 同一台实例最大重试次数,不包括首次调用，默认0
+  MaxAutoRetries: 1
+  # 重试负载均衡其他的实例最大重试次数,不包括首次调用，默认1
+  MaxAutoRetriesNextServer: 1
+  # 是否对所有操作都重试
+  OkToRetryOnAllOperations: true
 
+b) 测试（没试出来）
+依次启动eureka,consumer。
+启动producer，配置另一个实例，在Edit Configurations...中，复制一份Producer，并在environment variable中指定端口（cfg.ins=2;server.port=9002）。
+或者新建一个producer1项目，服务名相同，端口不同。
+在consumer模块中调整 com.vic.consumer.controller.RibbonController.t1
+
+5.2 ribbon局部配置
 #局部配置案例
 ego-product-provider:
     ribbon:

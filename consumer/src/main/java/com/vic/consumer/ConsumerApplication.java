@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
- * Haxton.SR9版本加 @EnableHystrix 会提示错误
+ * Haxton.SR9版本加 @EnableHystrix 会提示错误如下：
  * Caused by: java.lang.ClassNotFoundException: com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect
  */
 //@EnableHystrix
