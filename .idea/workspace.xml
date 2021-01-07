@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51a3eaa5-e2b1-416f-8510-6af3da9522dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/RibbonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/vic/producer/controller/RibbonController.java" afterDir="false" />
+    <list default="true" id="51a3eaa5-e2b1-416f-8510-6af3da9522dc" name="Default Changelist" comment="test ribbon undone">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/Hystrix2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/HystrixController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/java/com/vic/hystrixdashboard/config/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/vic/producer/controller/Hystrix2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/vic/producer/controller/HystrixController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comm-server/src/main/java/com/vic/commserver/feign/producer/ProducerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/comm-server/src/main/java/com/vic/commserver/feign/producer/ProducerClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/ConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/config/ServletConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +79,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../rabbitmq" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2793354" />
+    <property name="project.structure.side.proportion" value="0.29056048" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
@@ -82,6 +90,7 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.vic.producer.controller" />
       <recent name="com.vic.consumer.controller" />
+      <recent name="com.vic.hystrixdashboard.config" />
       <recent name="com.vic.commserver.feign.producer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -92,7 +101,7 @@
       <recent name="D:\github\exotic-feign-ribbon-hystrix\comm-server\src\main\java\com\vic\commserver\feign\producer" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProducerApplication">
+  <component name="RunManager" selected="Spring Boot.ConsumerApplication1">
     <configuration name="ConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vic.consumer.ConsumerApplication" />
       <module name="consumer" />
@@ -119,6 +128,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerApplication1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vic.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.consumer.ConsumerApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=9007" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka" />
       <extension name="coverage">
@@ -128,6 +152,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hystrix-dashboard" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.hystrixdashboard.HystrixDashboardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,18 +212,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TurbineServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="turbine-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vic.turbineservice.TurbineServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.ConsumerApplication" />
       <item itemvalue="Spring Boot.ProducerApplication1" />
+      <item itemvalue="Spring Boot.ConsumerApplication1" />
       <item itemvalue="Spring Boot.ConsumerApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.Producer1Application" />
       <item itemvalue="Spring Boot.ProducerApplication" />
+      <item itemvalue="Spring Boot.TurbineServiceApplication" />
+      <item itemvalue="Spring Boot.HystrixDashboardApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ProducerApplication" />
         <item itemvalue="Application.ConsumerApplication" />
+        <item itemvalue="Spring Boot.ProducerApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Spring Boot.ConsumerApplication" />
         <item itemvalue="Spring Boot.Producer1Application" />
@@ -222,7 +263,8 @@
       <workItem from="1608692380159" duration="2321000" />
       <workItem from="1608889001296" duration="774000" />
       <workItem from="1608891141117" duration="627000" />
-      <workItem from="1609825608311" duration="3363000" />
+      <workItem from="1609825608311" duration="6624000" />
+      <workItem from="1609896042755" duration="13258000" />
     </task>
     <task id="LOCAL-00001" summary="add conclusion">
       <created>1607666235608</created>
@@ -259,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608890763030</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test ribbon undone">
+      <created>1609831367707</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609831367707</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,17 +319,18 @@
     <MESSAGE value="use hystrix dashboard demo" />
     <MESSAGE value="add gitignore" />
     <MESSAGE value="adjust ribbon" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust ribbon" />
+    <MESSAGE value="test ribbon undone" />
+    <option name="LAST_COMMIT_MESSAGE" value="test ribbon undone" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1607495072207">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1609938759557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607495072207" />
-    <state x="182" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609827621814">
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609938759557" />
+    <state x="182" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609998420389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="182" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609827621814" />
+    <state x="182" y="164" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609998420389" />
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1607498872883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -289,14 +339,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="580" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606734565125" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607505024481">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609938877718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607505024481" />
-    <state x="905" y="194" key="CommitChangelistDialog2" timestamp="1608890762440">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609938877718" />
+    <state x="905" y="194" key="CommitChangelistDialog2" timestamp="1609900533358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="905" y="194" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608890762440" />
+    <state x="905" y="194" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609900533358" />
     <state width="510" height="466" key="DebuggerActiveHint" timestamp="1606816928122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -309,54 +359,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607945927044" />
-    <state width="1877" height="334" key="GridCell.Tab.0.bottom" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.0.bottom" timestamp="1609998306937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.0.center" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306937" />
+    <state width="1877" height="433" key="GridCell.Tab.0.center" timestamp="1609998306937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.0.left" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306937" />
+    <state width="1877" height="433" key="GridCell.Tab.0.left" timestamp="1609998306937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.0.right" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306937" />
+    <state width="1877" height="433" key="GridCell.Tab.0.right" timestamp="1609998306937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.1.bottom" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306937" />
+    <state width="1877" height="433" key="GridCell.Tab.1.bottom" timestamp="1609998306850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.1.center" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306850" />
+    <state width="1877" height="433" key="GridCell.Tab.1.center" timestamp="1609998306850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.1.left" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306850" />
+    <state width="1877" height="433" key="GridCell.Tab.1.left" timestamp="1609998306850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.1.right" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306850" />
+    <state width="1877" height="433" key="GridCell.Tab.1.right" timestamp="1609998306850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.2.bottom" timestamp="1609831195213">
+    <state width="1877" height="433" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306850" />
+    <state width="1877" height="433" key="GridCell.Tab.2.bottom" timestamp="1609998298491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195213" />
-    <state width="1877" height="334" key="GridCell.Tab.2.center" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609998298491" />
+    <state width="1877" height="433" key="GridCell.Tab.2.center" timestamp="1609998298491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.2.left" timestamp="1609831195212">
+    <state width="1877" height="433" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609998298491" />
+    <state width="1877" height="433" key="GridCell.Tab.2.left" timestamp="1609998298491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195212" />
-    <state width="1877" height="334" key="GridCell.Tab.2.right" timestamp="1609831195213">
+    <state width="1877" height="433" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609998298491" />
+    <state width="1877" height="433" key="GridCell.Tab.2.right" timestamp="1609998298491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609831195213" />
+    <state width="1877" height="433" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609998298491" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1607504973352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -369,22 +419,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608890740484" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608890764184">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609831368737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608890764184" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609831368737" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607505850656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607505850656" />
-    <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1609826884012">
+    <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1609937571041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609826884012" />
-    <state x="334" y="214" key="new project wizard" timestamp="1607504327149">
+    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609937571041" />
+    <state x="334" y="214" key="new project wizard" timestamp="1609991938723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="214" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607504327149" />
+    <state x="334" y="214" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609991938723" />
     <state x="623" y="229" width="1164" height="678" key="search.everywhere.popup" timestamp="1607912850591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

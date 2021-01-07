@@ -1,4 +1,4 @@
-package com.vic.consumer.config;
+package com.vic.hystrixdashboard.config;
 
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -18,14 +18,11 @@ public class ServletConfig {
      * 只要在自己的项目里配置上下面的servlet就可以了
      */
     @Bean
-    public ServletRegistrationBean getServlet() {
+    public ServletRegistrationBean getServlet(){
         HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
         ServletRegistrationBean registrationBean = new ServletRegistrationBean(streamServlet);
         registrationBean.setLoadOnStartup(1);
-        /**
-         * 与management.endpoints.web.base-path: /quorum 一致
-         */
-        registrationBean.addUrlMappings("/hystrix.stream");
+        registrationBean.addUrlMappings("/actuator/hystrix.stream");
         registrationBean.setName("HystrixMetricsStreamServlet");
         return registrationBean;
     }

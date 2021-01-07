@@ -9,6 +9,8 @@
         <module name="comm-server" />
         <module name="producer1" />
         <module name="eureka" />
+        <module name="turbine-service" />
+        <module name="hystrix-dashboard" />
         <module name="producer" />
         <module name="comm-common" />
         <module name="consumer" />
@@ -21,8 +23,10 @@
       <module name="comm-server" options="" />
       <module name="consumer" options="" />
       <module name="eureka" options="" />
+      <module name="hystrix-dashboard" options="" />
       <module name="producer" options="" />
       <module name="producer1" options="" />
+      <module name="turbine-service" options="" />
     </option>
   </component>
 </project>

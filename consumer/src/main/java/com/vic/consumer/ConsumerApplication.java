@@ -18,7 +18,6 @@ import org.springframework.context.annotation.ComponentScan;
  */
 //@EnableHystrix
 //@EnableCircuitBreaker
-@EnableHystrixDashboard
 @EnableFeignClients(basePackages = {"com.vic.commserver.feign"})
 /**
  * 注意：这里如果只是扫描com.vic.commserver是不行的，还需要扫描自己项目，可配置上级目录，即：com.vic

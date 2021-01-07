@@ -15,6 +15,12 @@ public interface ProducerClient {
     @GetMapping("ribbon/test1")
     String ribbonTest1();
 
+    @GetMapping("hystrix/test1")
+    String hystrixTest1(@RequestParam(value = "id") Integer id);
+
+    @GetMapping("hystrix2/test1")
+    String hystrix2Test1(@RequestParam(value = "id") Integer id);
+
 
     @GetMapping("test/hello")
     String hello(@RequestParam(value = "name") String name);
@@ -52,6 +58,16 @@ class ProducerClientHystrix implements ProducerClient {
     @Override
     public String ribbonTest1() {
         return "ribbonTest1, 服务降级";
+    }
+
+    @Override
+    public String hystrixTest1(Integer id) {
+        return "hystrixTest1, 服务降级";
+    }
+
+    @Override
+    public String hystrix2Test1(Integer id) {
+        return "hystrix2Test1, 服务降级";
     }
 
     @Override

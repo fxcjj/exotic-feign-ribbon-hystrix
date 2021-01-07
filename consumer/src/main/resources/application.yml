@@ -23,7 +23,8 @@ management:
     web:
       exposure:
         include: "*"
-      base-path: /quorum
+      # 注意：和 com.vic.consumer.config.ServletConfig 指定要相同
+#      base-path: /quorum
 # feign相关配置
 # 如果未配置default，connectTimeout默认10s，readTimeout默认60s，参考类 feign.Request.Options
 # 默认关闭Feign的重试机制
@@ -74,9 +75,9 @@ ribbon:
   # 同一台实例最大重试次数,不包括首次调用，默认0
   MaxAutoRetries: 0
   # 重试负载均衡其他的实例最大重试次数,不包括首次调用，默认1
-  MaxAutoRetriesNextServer: 1
+  MaxAutoRetriesNextServer: 0
   # 是否对所有操作都重试
-  OkToRetryOnAllOperations: true
+  OkToRetryOnAllOperations: false
 
 # ribbon的局部配置
 
@@ -94,10 +95,17 @@ hystrix:
         isolation:
           thread:
             # 断路器超时时间，默认1000ms
-            timeoutInMilliseconds: 16000
+            timeoutInMilliseconds: 10000
+      circuitBreaker:
+        # 触发熔断的最小请求次数，默认20次，当请求5次失败时，会触发熔断，即断路器打开
+        requestVolumeThreshold: 5
+        # 熔断多少秒后尝试请求，默认5秒
+        sleepWindowInMilliseconds: 20000
+        # 触发熔断的失败请求最小占比，默认50%
+        errorThresholdPercentages: 50
   # 把监控地址加入proxyStreamAllowList
-  dashboard:
-    proxy-stream-allow-list: "localhost"
+#  dashboard:
+#    proxy-stream-allow-list: "localhost"
 
 #logging:
 #  level:

@@ -12,9 +12,12 @@
     <modules>
         <module>eureka</module>
         <module>producer</module>
+        <module>producer1</module>
         <module>consumer</module>
         <module>comm-common</module>
         <module>comm-server</module>
+        <module>turbine-service</module>
+        <module>hystrix-dashboard</module>
     </modules>
 
     <properties>
