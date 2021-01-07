@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51a3eaa5-e2b1-416f-8510-6af3da9522dc" name="Default Changelist" comment="test ribbon undone">
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/Hystrix2Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/HystrixController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/java/com/vic/hystrixdashboard/config/ServletConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/vic/producer/controller/Hystrix2Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/vic/producer/controller/HystrixController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="51a3eaa5-e2b1-416f-8510-6af3da9522dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comm-server/src/main/java/com/vic/commserver/feign/producer/ProducerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/comm-server/src/main/java/com/vic/commserver/feign/producer/ProducerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/HystrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/HystrixController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +251,7 @@
       <workItem from="1608889001296" duration="774000" />
       <workItem from="1608891141117" duration="627000" />
       <workItem from="1609825608311" duration="6624000" />
-      <workItem from="1609896042755" duration="13258000" />
+      <workItem from="1609896042755" duration="15620000" />
     </task>
     <task id="LOCAL-00001" summary="add conclusion">
       <created>1607666235608</created>
@@ -308,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609831367707</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test turbine">
+      <created>1609999261181</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609999261181</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +314,8 @@
     <MESSAGE value="add gitignore" />
     <MESSAGE value="adjust ribbon" />
     <MESSAGE value="test ribbon undone" />
-    <option name="LAST_COMMIT_MESSAGE" value="test ribbon undone" />
+    <MESSAGE value="test turbine" />
+    <option name="LAST_COMMIT_MESSAGE" value="test turbine" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1609938759557">
@@ -343,54 +338,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609938877718" />
-    <state x="905" y="194" key="CommitChangelistDialog2" timestamp="1609900533358">
+    <state x="905" y="194" key="CommitChangelistDialog2" timestamp="1609999259971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="905" y="194" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609900533358" />
+    <state x="905" y="194" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609999259971" />
     <state width="510" height="466" key="DebuggerActiveHint" timestamp="1606816928122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="510" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1606816928122" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1608890715657">
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1609999242409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608890715657" />
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609999242409" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607945927044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607945927044" />
-    <state width="1877" height="433" key="GridCell.Tab.0.bottom" timestamp="1609998306937">
+    <state width="1877" height="383" key="GridCell.Tab.0.bottom" timestamp="1610002080320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="433" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306937" />
-    <state width="1877" height="433" key="GridCell.Tab.0.center" timestamp="1609998306937">
+    <state width="1877" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610002080320" />
+    <state width="1877" height="383" key="GridCell.Tab.0.center" timestamp="1610002080319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="433" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306937" />
-    <state width="1877" height="433" key="GridCell.Tab.0.left" timestamp="1609998306937">
+    <state width="1877" height="383" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610002080319" />
+    <state width="1877" height="383" key="GridCell.Tab.0.left" timestamp="1610002080319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="433" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306937" />
-    <state width="1877" height="433" key="GridCell.Tab.0.right" timestamp="1609998306937">
+    <state width="1877" height="383" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610002080319" />
+    <state width="1877" height="383" key="GridCell.Tab.0.right" timestamp="1610002080319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="433" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306937" />
-    <state width="1877" height="433" key="GridCell.Tab.1.bottom" timestamp="1609998306850">
+    <state width="1877" height="383" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610002080319" />
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1610002080190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="433" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306850" />
-    <state width="1877" height="433" key="GridCell.Tab.1.center" timestamp="1609998306850">
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610002080190" />
+    <state width="1877" height="383" key="GridCell.Tab.1.center" timestamp="1610002080190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="433" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306850" />
-    <state width="1877" height="433" key="GridCell.Tab.1.left" timestamp="1609998306850">
+    <state width="1877" height="383" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610002080190" />
+    <state width="1877" height="383" key="GridCell.Tab.1.left" timestamp="1610002080189">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="433" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306850" />
-    <state width="1877" height="433" key="GridCell.Tab.1.right" timestamp="1609998306850">
+    <state width="1877" height="383" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610002080189" />
+    <state width="1877" height="383" key="GridCell.Tab.1.right" timestamp="1610002080190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="433" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609998306850" />
+    <state width="1877" height="383" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610002080190" />
     <state width="1877" height="433" key="GridCell.Tab.2.bottom" timestamp="1609998298491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -419,10 +414,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608890740484" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609831368737">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609999262175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609831368737" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609999262175" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607505850656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -435,10 +430,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="214" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609991938723" />
-    <state x="623" y="229" width="1164" height="678" key="search.everywhere.popup" timestamp="1607912850591">
+    <state x="623" y="229" width="1164" height="678" key="search.everywhere.popup" timestamp="1610002233490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="229" width="1164" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607912850591" />
+    <state x="623" y="229" width="1164" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610002233490" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/exotic_feign_ribbon_hystrix$ConsumerApplication.ic" NAME="ConsumerApplication Coverage Results" MODIFIED="1607410692329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
