@@ -1,0 +1,20 @@
+server:
+  port: 9011
+
+spring:
+  application:
+    name: turbine-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+turbine:
+  instanceUrlSuffix: /hystrix.stream
+  # \u6307\u5B9A\u9700\u8981\u6536\u96C6\u4FE1\u606F\u7684\u670D\u52A1\u540D\u79F0\uFF0C\u591A\u4E2A\u7528,\u5206\u9694
+  app-config: consumer
+  # \u6307\u5B9A\u670D\u52A1\u6240\u5C5E\u96C6\u7FA4
+  cluster-name-expression: new String('default')
+  # \u4EE5\u4E3B\u673A\u540D\u548C\u7AEF\u53E3\u53F7\u533A\u5206\u670D\u52A1
+  combine-host-port: true

@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51a3eaa5-e2b1-416f-8510-6af3da9522dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/HystrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/HystrixController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/vic/consumer/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +252,7 @@
       <workItem from="1609825608311" duration="6624000" />
       <workItem from="1609896042755" duration="15693000" />
       <workItem from="1610076498079" duration="2175000" />
-      <workItem from="1610415018104" duration="347000" />
+      <workItem from="1610415018104" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="add conclusion">
       <created>1607666235608</created>
@@ -316,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610003488318</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="remove redundant dependency">
+      <created>1610415574481</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610415574481</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +331,8 @@
     <MESSAGE value="test ribbon undone" />
     <MESSAGE value="test turbine" />
     <MESSAGE value="test get cur host ip" />
-    <option name="LAST_COMMIT_MESSAGE" value="test get cur host ip" />
+    <MESSAGE value="remove redundant dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove redundant dependency" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1609938759557">
@@ -353,18 +355,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609938877718" />
-    <state x="905" y="194" key="CommitChangelistDialog2" timestamp="1610415510251">
+    <state x="905" y="194" key="CommitChangelistDialog2" timestamp="1610415573660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="905" y="194" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610415510251" />
+    <state x="905" y="194" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610415573660" />
     <state width="510" height="466" key="DebuggerActiveHint" timestamp="1606816928122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="510" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1606816928122" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1610003460860">
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1610415546216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610003460860" />
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610415546216" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607945927044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -429,10 +431,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="435" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608890740484" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610003489617">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610415575787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610003489617" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610415575787" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607505850656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,0 +1,10 @@
+server:
+  port: 9021
+spring:
+  application:
+    name: hystrix-dashboard
+
+hystrix:
+  # \u628A\u76D1\u63A7\u5730\u5740\u52A0\u5165proxyStreamAllowList
+  dashboard:
+    proxy-stream-allow-list: "localhost"
