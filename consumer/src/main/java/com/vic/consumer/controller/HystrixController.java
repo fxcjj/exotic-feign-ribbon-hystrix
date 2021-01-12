@@ -19,12 +19,10 @@ public class HystrixController {
     @Autowired
     ProducerClient producerClient;
 
-    @Value("${spring.cloud.client.ip-address}")
-    String ip;
 
     @GetMapping("t1")
     public String t1(@RequestParam("id") Integer id) {
-        return producerClient.hystrixTest1(id) + "ip: " + ip;
+        return producerClient.hystrixTest1(id);
     }
 
 

@@ -16,10 +16,6 @@
 
         <dependency>
             <groupId>com.vic</groupId>
-            <artifactId>comm-common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.vic</groupId>
             <artifactId>comm-server</artifactId>
         </dependency>
         <dependency>

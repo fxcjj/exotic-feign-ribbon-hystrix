@@ -3,6 +3,7 @@ package com.vic.consumer.controller;
 import com.vic.commcommon.pojo.BoilerplateParam;
 import com.vic.commserver.feign.producer.ProducerClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,6 +19,18 @@ public class TestController {
 
     @Autowired
     ProducerClient producerClient;
+
+    @Value("${spring.cloud.client.ip-address}")
+    String ip;
+
+
+    @Value("${spring.cloud.client.hostname}")
+    String hostname;
+
+    @GetMapping("ok")
+    public String ok() {
+        return "hostname: [" + hostname + "], " + "ip-address: [" + ip + "]";
+    }
 
     @GetMapping("hello")
     public String hello(@RequestParam("name") String name) {

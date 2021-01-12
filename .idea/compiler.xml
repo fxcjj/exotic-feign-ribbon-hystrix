@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="comm-server" />
-        <module name="producer1" />
         <module name="eureka" />
-        <module name="turbine-service" />
+        <module name="producer1" />
         <module name="hystrix-dashboard" />
+        <module name="turbine-service" />
         <module name="producer" />
         <module name="comm-common" />
         <module name="consumer" />
